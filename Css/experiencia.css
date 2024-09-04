@@ -48,9 +48,12 @@ color: #141414;
 
 .projeto-ano{
   position: absolute;
-  top: 20px;
+  top: 22px;
   left: -100px;
+  text-align:right;
+  width:80px;
   color: #525252;
+  font-size: 0.875rem;
 }
 
 .projeto-titulo{
@@ -78,4 +81,34 @@ color: #141414;
   border-radius:4px;
   background: #ffff;
   padding: 5px 10px;
+}
+
+
+@media (max-width:800px) {
+ .experiencia{
+  grid-template-columns: 1fr;
+  gap: 40px;
+ }
+ .experiencia .subtitulo{
+  color: #141414;
+ 
+ }
+.experiencia-texto p{
+  font-size:1.25rem;
+}
+.projeto-ano{
+  position: initial;
+  order: 1;
+  width: initial;
+  text-align: left;
+}
+.projeto-ano::before{
+  content: "Ano: ";
+}
+}
+
+@media (max-width:400px){ 
+  .projeto{
+    grid-template-columns: 1fr;
+  }
 }
