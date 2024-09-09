@@ -1,4 +1,4 @@
-.introducao{
+.introducao {
   max-width: 1200px;
   padding: 40px 20px;
   margin: 0 auto;
@@ -9,17 +9,24 @@
   align-items: center;
 }
 
-.foto img{
+.foto {
+  width: 410px;
+  height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -70px;
+}
+
+.foto img {
   max-width: 100%;
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  display: block;
-  margin-left: -70px;
   padding: 30px;
 }
 
-.introducao h1{
+.introducao h1 {
   font-size: 4.5rem;
   line-height: 1.125;
   margin-bottom: 30px;
@@ -29,38 +36,38 @@
 .introducao h1::before {
   content: "";
   display: block;
-  width:130px;
+  width: 130px;
   height: 130px;
   background: url("../img/detalhe.svg") no-repeat center;
   position: absolute;
-  top:-25px;
-  left:-40px;
+  top: -25px;
+  left: -40px;
   z-index: -1;
 }
 
-.introducao p{
+.introducao p {
   font-size: 1.5rem;
   color: #525252;
 }
 
 @media (max-width: 1300px) {
-  .introducao h1{
-    font-size:3rem ;
+  .introducao h1 {
+    font-size: 3rem;
   }
-  .foto img{
+  .foto img {
     margin-left: 0px;
   }
 }
 
 @media (max-width: 900px) {
-  .introducao{
+  .introducao {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
-  .introducao h1{
-    font-size:2rem ;
-  }  
-  .introducao h1::before{
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .introducao h1::before {
     width: 30px;
     height: 10px;
     left: 0px;
@@ -68,39 +75,62 @@
 }
 
 @media (max-width: 800px) {
-.introducao{
-  grid-template-columns: 1fr;
-}
-.introducao h1{
-  font-size:2.5rem ;
-  text-align: center;}
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 
-.logo img{
-  margin-top: 30px;
-  height: 50px;
-  gap: 20px;
-}
-.header-menu {
-  gap: 20px;
-}
-.foto img{
-margin-left: auto;
-margin-right: auto;}
+  .logo img {
+    margin-top: 30px;
+    height: 50px;
+    gap: 20px;
+  }
+  .header-menu {
+    gap: 20px;
+  }
+  .foto img {
+    height: 350px;
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .foto {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
 
-.introducao h1::before{
-  width: 25.9px;
-  height: 21px;
-  left: 65px;
-  top: 1px;
-}
-.introducao p{
-  text-align: center;
-}
+  .introducao h1::before {
+    width: 25.9px;
+    height: 21px;
+    left: 65px;
+    top: 1px;
+  }
+  .introducao p {
+    text-align: center;
+  }
 }
 
 @media (max-width: 400px) {
-  .introducao h1::before{
-  bottom: 15px;
-  left: 38px;
+  .introducao h1::before {
+    bottom: 15px;
+    left: 38px;
+  }
+}
+
+@media (max-width: 400px) {
+  .foto img {
+    height: 350px;
+    width: 350px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .foto {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
   }
 }
